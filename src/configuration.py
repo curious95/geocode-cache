@@ -7,9 +7,10 @@ class Config:
     """
 
     def __init__(self):
-        self.driver = os.getenv('SOURCE', 'geckodrivermac')
-        self.index = os.getenv('API_KEY', 'zoning_data')
-        self.es_user = os.getenv('ESUSER', 'elastic')
-        self.es_host = os.getenv('ESHOST', '35.223.3.40')
-        self.es_pass = os.getenv('ESPASS', '7aFypVtVPbFcWdF')
-        self.es_port = os.getenv('ESPORT', '9200')
+        self.gmaps_key = os.getenv('GMAPKEY', '')
+        self.pstack_key = os.getenv('PSTACKEY', '')
+        self.port = os.getenv('PORT', '')
+        self.db_host = os.getenv('DBHOST', '')
+        self.db_port = os.getenv('DBPORT', '')
+        self.db_pass = os.getenv('DBPASS', '')
+        self.db_user = os.getenv('DBUSER', '')
