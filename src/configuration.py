@@ -7,10 +7,10 @@ class Config:
     """
 
     def __init__(self):
-        self.gmaps_key = os.getenv('GMAPKEY', '')
-        self.pstack_key = os.getenv('PSTACKEY', '')
-        self.port = os.getenv('PORT', '')
-        self.db_host = os.getenv('DBHOST', '')
-        self.db_port = os.getenv('DBPORT', '')
-        self.db_pass = os.getenv('DBPASS', '')
-        self.db_user = os.getenv('DBUSER', '')
+        self.gmaps_key = os.getenv('GMAPKEY', 'XXXXXXXXXXXXXXXXXXXXXXXX')
+        self.pstack_key = os.getenv('PSTACKEY', 'XXXXXXXXXXXXXXXXXXXXXXXX')
+        self.es_host = os.getenv('ESHOST', 'XXXXXXXXXXXXXXXXXXXXXXXX')
+        self.es_port = os.getenv('ESPORT', 'XXXXXXXXXXXXXXXXXXXXXXXX')
+        self.es_pass = os.getenv('ESPASS', 'XXXXXXXXXXXXXXXXXXXXXXXX')
+        self.es_user = os.getenv('ESUSER', 'XXXXXXXXXXXXXXXXXXXXXXXX')
+        self.es_index = os.getenv('EINDEX ', 'XXXXXXXXXXXXXXXXXXXXXXXX')
